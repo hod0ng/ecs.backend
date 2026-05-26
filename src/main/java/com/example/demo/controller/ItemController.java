@@ -28,11 +28,11 @@ public class ItemController {
     public void init() {
         if (itemRepository.count() > 0) return;
         itemRepository.saveAll(List.of(
-                Item.builder().name("노트북").description("삼성 갤럭시북").build(),
-                Item.builder().name("마우스").description("로지텍 무선 마우스").build(),
-                Item.builder().name("키보드").description("기계식 키보드").build(),
-                Item.builder().name("모니터").description("27인치 4K 디스플레이").build(),
-                Item.builder().name("이어폰").description("애플 에어팟").build()
+                Item.builder().name("강호성").description("MSP팀").build(),
+                Item.builder().name("이해성").description("MSP팀").build(),
+                Item.builder().name("최병주").description("SA팀").build(),
+                Item.builder().name("홍이슬").description("운영팀").build(),
+                Item.builder().name("장진환").description("대표이사").build()
         ));
     }
 }
