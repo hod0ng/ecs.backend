@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine AS build
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:17 AS build
 
 WORKDIR /app
 
