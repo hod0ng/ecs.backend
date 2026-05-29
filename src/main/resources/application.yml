@@ -4,6 +4,10 @@ spring:
     username: ${DB_USER}
     password: ${DB_PW}
     driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 580000
+      keepalive-time: 60000
+      connection-test-query: SELECT 1
   jpa:
     hibernate:
       ddl-auto: update
